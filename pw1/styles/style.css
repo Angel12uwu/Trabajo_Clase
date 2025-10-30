@@ -1,98 +1,87 @@
-/*Selector*/
-/*Son expresiones que filtran o seleccionan nodos especificos del DOM
-del documento renderizado
+/* Selector */
+/* Son expresiones que filtran o seleccionan
+nodos especificos del DOM del documento
+renderizado
 
 select * from DOM where selector = ?;
 */
 
-*{
+* {
     box-sizing: border-box;
 }
-
 body{
-    padding: 0%;
-    margin: 0%;
+    padding:0px;
+    margin:0px;
 }
-
-header{
+header {
     background-color: #630;
     color: #FFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 header section.branding {
-    display: flex;
+    display:flex;
     gap: 1rem;
     align-items: center;
 }
-
-header section.branding img{
+header section.branding  img{
     height: 48px;
 }
-
-header h1{
+header section.branding h1{
     font-size: 1.25rem;
-    
 }
-
-header nav ul{
+header nav ul {
     list-style: none;
-    display: flex;
-    gap: 0.5rem;
+    display:flex;
+    gap:0.5rem;
 }
-
 header nav ul li a{
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
 }
-
-header nav ul li a:hover{
-    background-color: #7a7a7a;
-    text-decoration: underline;
+header nav ul li a:hover {
+    background-color: #ffffff88;
 }
-
-header .searchform{
-    flex: 1;
+header .searchform {
+    flex:1;
     padding: 0.25rem 1rem;
 }
-
-header .searchform form{
+header .searchform form {
     display: flex;
-    gap: 0.5rem;
     align-items: center;
+    gap:0.5rem;
 }
-header .searchform form input{
+header .searchform form input {
     flex:1;
     font-size: 1rem;
-    padding: 0.25rem 0.5rem;
-    border: none;
+    padding:0.25rem 0.5rem;
+    border:none;
     border-radius: 27px;
     display: inline-block;
 }
 
 main .hero-panel{
-    width: 100%;
+    width:100%;
     height: 70vh;
-    background-color: rgb(170, 158, 145);
+    background-color:rgb(238, 187, 136);
     overflow: hidden;
     position: relative;
 }
 
 main .hero-panel img{
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height:100%;
     object-fit: cover;
     object-position: bottom;
 }
 
-main .hero-panel .action-panel{
-    position: absolute; 
+main .hero-panel .action-panel {
+    position: absolute;
     top: 50%;
-    left: 33.33%;
-    background-color: #FFF;
+    left: 50%;
+    background-color: #ffffffcc;
     transform: translate(-50%, -50%);
     padding: 2rem;
     border-radius: 15px;
@@ -103,85 +92,80 @@ main .hero-panel .action-panel.q1 {
     top: 25%;
     left: 25%;
 }
-main .hero-panel .action-panel.q2{
+main .hero-panel .action-panel.q2 {
     top: 25%;
     left: 75%;
 }
-main .hero-panel .action-panel.q3{
+main .hero-panel .action-panel.q3 {
     top: 75%;
     left: 25%;
 }
-main .hero-panel .action-panel.q4{
+main .hero-panel .action-panel.q4 {
     top: 75%;
     left: 75%;
 }
 
-.container{
+.container {
     padding: 0.75rem 1rem;
 }
-
-.card-holder{
-    display: flex;
-    gap: 0.75rem;
+.card-holder {
+    display:flex;
+    flex-direction: column;
+    gap:0.75rem;
 }
-
-.card{
+.card {
     width: 300px;
-    border: 1px solid #FFF;
-    box-sizing: 3px 3px 5px #000;
-    overflow: hidden;
-    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 3px 3px 5px #00000077;
+    overflow:hidden;
+    border-radius: 7px;
 }
-
-.card-header img{
-    padding: 0%;
-    margin: 0%;
-    width: 100%;
-    height: 200px;
+.card-header img {
+    display: block;
+    padding:0px;
+    margin:0px;
+    width:100%;
+    height:200px;
     object-fit: cover;
 }
-
-.card-body{
-    padding-bottom: 5rem;
-    border-bottom: 1px #7a7a7a solid;
+.card-body {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px #ccc solid;
     margin-bottom: 0.5rem;
 }
 
-.card-body strong{
+.card-body strong {
     display: block;
-    padding: 0.75rem 5px;
-    margin-bottom: 0.5rem;
+    padding:0.75rem 0.5rem;
+    margin-bottom: 0.5rem; /* trbl  top right bottom left  (top bottom) (right left) (trbl) */
     background-color: #630;
-    color: #FFF;
+    color:#fff;
 }
 
 .card-body .price-tag{
-    display: flex;
+    display:flex;
+    padding:0.5rem;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 1rem;
+    gap:1rem;
     align-items: center;
-    padding: 0.5rem 1rem;
     border: 1px solid #000;
-    margin-left: auto;
-    width: fit-content;
+    margin-left:auto;
+    width:fit-content;
     margin-right: 0.5rem;
-    border-radius: 37px;
+    border-radius: 17px;
 }
-
 .card-footer {
-    padding: 0.5rem;
+    padding:0.5rem;
     padding-bottom: 1rem;
 }
-
-.card-footer button{
-    display: block;
-    background-color: #630;
-    color: #FFF;
+.card-footer button {
+    display:block;
     border: 1px solid #000;
-    box-shadow: 3px 3px 3px #000;
+    box-shadow: 1px 1px 3px #00000077;
+    background-color:#005928;
+    color:#fff;
     border-radius: 9px;
-    padding: 0.75rem 1rem;
-    margin-left: auto;
+    padding:0.75rem 1rem;
+    margin-left:auto;
 }
-

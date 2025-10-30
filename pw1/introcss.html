@@ -1,60 +1,135 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Intro to CSS</title>
-        <link rel = "stylesheet" href = "styles/style.css">
-    </head>
-    <body>
-       <header>
-            <section class = "branding">
-                <img src = "https://picsum.photos/id/292/200/100" alt = "Logo de la empresa"/>
-                <h1>Historia del Café</h1>
-            </section>
-            <section class = "searchform">
-                <form action = "#searchUri" method = "get">
-                    <label for = "busqueda">Buscar</label>
-                    <input type = "text" name = "busqueda" placeholder = "Buscar..." id = "busqueda"/>
-                    <button type = "submit" value = "Buscar">Buscar</button>
-                </form>
-            </section>
-            <nav>
-                <ul>
-                    <li><a href = "#">Categorías</a></li>
-                    <li><a href = "#">Gourmet</a></li>
-                    <li><a href = "#">Eventos</a></li>
-                    <li><a href = "#">Contactanos</a></li>
-                </ul>
-            </nav>
-       </header>
-       <main>
-         <section class ="hero-panel">
-
-         </section>
-        <section class = "container">
-            <div class = "card-holder">
-                <div class = "card">
-                    <div class = "card-header">
-                        <img src = "https://picsum.photos/id/1062/300/200" alt = "Imagen de café 1"/>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a CSS</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <header>
+        <section class="branding">
+            <img src="https://picsum.photos/128/64" alt="Logo" />
+            <h1>Historias de un Café</h1>
+        </section>
+        <section class="searchform">
+            <form action="#searchUri" method="get">
+                <label for="busqueda">Buscar</label>
+                <input type="text" placeholder="Buscar" name="busqueda" id="busqueda">
+                <button type="submit" name="buscar">Buscar</button>
+            </form>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Gourmet</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-panel">
+            <picture>
+                <source
+                    srcset="https://picsum.photos/id/140/1300/780"
+                    media="(min-width:1025px)" />
+                <source
+                    srcset="https://picsum.photos/id/140/1025/640"
+                    media="(min-width:720px)" />
+                <img
+                    src="https://picsum.photos/id/140/480/480"
+                    class="image-full"
+                    alt="heroPanel" />
+            </picture>
+            <div class="action-panel q4">
+                <h2>Some Action to do</h2>
+                <p>Some cool actions to do when you click on the following button</p>
+                <button>Click Me</button>
+            </div>
+        </section>
+        <section class="container">
+            <div class="card-holder">
+                <div class="card">
+                    <div class="card-header">
+                       <img src="https://picsum.photos/id/243/300/200" alt="Product Picture 1" />
+                    </div>
+                    <div class="card-body">
+                        <strong>Nombre Producto 1</strong>
+                        <div class="price-tag">
+                            <span>Precio</span>
+                            <span>$100.00</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button>Add to Cart</button>
                     </div>
                 </div>
-                <div class = "card-body">
-                    <strong>Nombre Producto 1</strong>
-                    <div class = "price-img">
-                        <span>Precio</span>
-                        <span>$100</span>
+                <div class="card">
+                    <div class="card-header">
+                       <img src="https://picsum.photos/id/243/300/200" alt="Product Picture 1" />
+                    </div>
+                    <div class="card-body">
+                        <strong>Nombre Producto 1</strong>
+                        <div class="price-tag">
+                            <span>Precio</span>
+                            <span>$100.00</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button>Add to Cart</button>
                     </div>
                 </div>
-                <div class = "card-footer">
-                    <button>Añadir al carrito</button>
+                <div class="card">
+                    <div class="card-header">
+                       <img src="https://picsum.photos/id/243/300/200" alt="Product Picture 1" />
+                    </div>
+                    <div class="card-body">
+                        <strong>Nombre Producto 1</strong>
+                        <div class="price-tag">
+                            <span>Precio</span>
+                            <span>$100.00</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                       <img src="https://picsum.photos/id/243/300/200" alt="Product Picture 1" />
+                    </div>
+                    <div class="card-body">
+                        <strong>Nombre Producto 1</strong>
+                        <div class="price-tag">
+                            <span>Precio</span>
+                            <span>$100.00</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                       <img src="https://picsum.photos/id/243/300/200" alt="Product Picture 1" />
+                    </div>
+                    <div class="card-body">
+                        <strong>Nombre Producto 1</strong>
+                        <div class="price-tag">
+                            <span>Precio</span>
+                            <span>$100.00</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button>Add to Cart</button>
+                    </div>
                 </div>
             </div>
         </section>
-         </section>
-       </main>
-       <footer>
+    </main>
+    <footer>
 
-       </footer>
-    </body>
+    </footer>
+</body>
 </html>
